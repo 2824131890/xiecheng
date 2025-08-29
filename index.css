@@ -1,0 +1,504 @@
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('../iconfont.ttf?t=1756259327472') format('truetype');
+}  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(244, 244, 244);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.back{
+    position: relative;
+    background: linear-gradient(to bottom, #fff, rgb(244, 244, 244));
+    width: 540px;
+    height: 798px;
+    margin: 0 auto;
+}
+.header{
+    height: 50px;
+    /* background-color: pink; */
+}
+.top{
+    padding: 12px 12px 6px;
+}
+.header a{
+    display: flex;
+    height: 32px;
+    /* background-color: green; */
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1.8px solid rgb(0, 134, 246);
+}
+.header a:hover{
+    cursor: text;
+}
+.header a::before{
+    content: '\e6e4';
+    font-family: "iconfont";
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 15px;
+    /* margin: 6px 0 6px 15px; */
+}
+.header a::after{
+    content: '搜索:目的地/酒店/景点/航班号';
+    font-family: "iconfont";
+    font-size: 15px;
+    color: #999;
+    line-height: 32px;
+    margin-left: 5px;
+}
+.nav{
+    border-radius: 8px;
+    margin: 0 15px 3px;
+    overflow: hidden;
+}
+.line{
+    height: 61px;
+    /* background-color: pink; */
+}
+.line ul{
+    display: flex;
+    text-align: center;
+}
+.line ul li{
+    flex: 1;
+    height: 61px;
+}
+.line ul li a span:nth-child(1){
+    display: block;
+    margin: 0 auto;
+    margin-top: 7px;
+    width: 28px;
+    height: 28px;
+    /* background-color: green; */
+}
+.line ul li a span:nth-child(2){
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+.line:not(:first-child) ul li a span{
+    color: rgb(20, 20, 20);
+}
+/* 除了最后一个元素其他都选择 */
+.line ul li:not(:last-child){
+    border-right: 1px solid #fff;
+}
+.line:nth-child(2){
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.line:nth-child(1) ul li:nth-child(1){
+    background: linear-gradient(to bottom, rgb(250, 97, 85), rgb(251, 124, 81));
+}
+.line:nth-child(1) ul li:nth-child(1) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/hotel.fc17d0f7726132bf2459621923704f0f.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1) ul li:nth-child(2){
+    background: linear-gradient(to bottom, rgb(62, 136, 250), rgb(76, 168, 250));
+}
+.line:nth-child(1) ul li:nth-child(2) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/flight.2af1e1835a10709db9ad91702e30de35.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1) ul li:nth-child(3){
+    background: linear-gradient(to bottom, rgb(96, 134, 255), rgb(100, 157, 255));
+}
+.line:nth-child(1) ul li:nth-child(3) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/train_ticket.62fc76e6f4ffac3d2e4610c807f535bb.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1) ul li:nth-child(4){
+    background: linear-gradient(to bottom, rgb(49, 196, 181), rgb(75, 213, 180));
+}
+.line:nth-child(1) ul li:nth-child(4) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/vacation.50ea6db60ea69086791ea507b62364bb.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1) ul li:nth-child(5){
+    background: linear-gradient(to bottom, rgb(255, 141, 59), rgb(255, 163, 68));
+}
+.line:nth-child(1) ul li:nth-child(5) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/gs.24c525633ba91ad0a2c41ff96773262b.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(2) ul li:nth-child(1){
+    background-color:rgb(255, 245, 241); 
+}
+.line:nth-child(2) ul li:nth-child(1) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/hotel_inn.cbccfdc8449dea7bf83171dfa7ea6f81.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(2) ul li:nth-child(2){
+    background-color:rgb(239, 249, 255); 
+}
+.line:nth-child(2) ul li:nth-child(2) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/flight_schedule.f7280452a35ac7ed0db5f290db8fd605.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(2) ul li:nth-child(3){
+    background-color:rgb(242, 245, 255); 
+}
+.line:nth-child(2) ul li:nth-child(3) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/bus_ticket.19d2e8eb864288544912b3c1005c9a8e.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(2) ul li:nth-child(4){
+    background-color:rgb(236, 252, 248); 
+}
+.line:nth-child(2) ul li:nth-child(4) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/ticket.e872065047ec929016de33d36e578e49.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(2) ul li:nth-child(5){
+    background-color:rgb(255, 249, 242); 
+}
+.line:nth-child(2) ul li:nth-child(5) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/shop.dba5be1f7b683690ea1d53bdd9ecef8f.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(3) ul li:nth-child(1){
+    background-color:rgb(255, 245, 241); 
+}
+.line:nth-child(3) ul li:nth-child(1) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/food_v2.759e14ab287956e9925f669ec1ef2169.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(3) ul li:nth-child(2){
+    background-color:rgb(239, 249, 255); 
+}
+.line:nth-child(3) ul li:nth-child(2) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/airport_transfer.fb8d923aefb7393a3485ebcde0888932.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(3) ul li:nth-child(3){
+    background-color:rgb(242, 245, 255); 
+}
+.line:nth-child(3) ul li:nth-child(3) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/car.d343444e248183e0c2ce61894012a327.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(3) ul li:nth-child(4){
+    background-color:rgb(236, 252, 248); 
+}
+.line:nth-child(3) ul li:nth-child(4) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/weekend.b327d041f73dd403971831a874eb25e9.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.line:nth-child(3) ul li:nth-child(5){
+    background-color:rgb(255, 249, 242); 
+}
+.line:nth-child(3) ul li:nth-child(5) a span:nth-child(1){
+    background-image: url(https://bd-s.tripcdn.cn/modules/basebiz/h5home/finance.5cd5a7a955c6e5c633e6ae4e2b6cd551.png
+    );
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.img{
+    border-radius: 8px;
+    margin: 10px 15px;
+    /* font-size: 0; */
+    overflow: hidden;
+}
+.img img{
+    display: block;
+    width: 100%;
+}
+.group-button{
+    display: flex;
+    margin: 20px 15px;
+}
+.group-left, .group-right{
+    flex: 1;
+    text-align: center;
+}
+.group-button a{
+    display: inline-block;
+    height: 32px;
+    border: 1px solid #999;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 32px;
+}
+.group-button .group-left a span:nth-child(1)::before{
+    font-family: "iconfont";
+    content: '\e63b';
+    font-size: 13px;
+    padding-left: 15px;
+    color: #333;
+}
+.group-button .group-right a span:nth-child(1)::before{
+    font-family: "iconfont";
+    content: '\e606';
+    font-size: 13px;
+    padding-left: 15px;
+    color: #333;
+}
+.group-button a span:nth-child(2){
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 15px;
+    color: #333;
+}
+.tool-ver{
+    margin: 15px 0;
+    text-align: center;
+}
+.tool-ver a{
+    font-size: 12px;
+    color: #666;
+}
+.tool-ver a:nth-child(1){
+    border-right: 1px solid #ccc;
+    padding-right: 25px;
+}
+.tool-ver a:nth-child(2){
+    padding-left: 25px;
+}
+.tool-ver p{
+    margin: 17px 0;
+}
+.tool-ver p, span{
+    font-size: 10px;
+    color: #666;
+}
+.tabbar{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.tabbar a{
+    flex: 1;
+    height: 49px;
+}
+.tabbar a:nth-child(1) span:nth-child(1){
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: url(https://bd-s.tripcdn.cn/NFES/html5/1741677121456/_next/serverStatic/img/tabbar.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+.tabbar a:nth-child(2) span:nth-child(1){
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: url(https://bd-s.tripcdn.cn/NFES/html5/1741677121456/_next/serverStatic/img/tabbar.png) no-repeat 0 -32px;
+    background-size: 32px auto;
+}
+.tabbar a:nth-child(3) span:nth-child(1){
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: url(https://bd-s.tripcdn.cn/NFES/html5/1741677121456/_next/serverStatic/img/tabbar.png) no-repeat 0 -64px;
+    background-size: 32px auto;
+}
+.tabbar a:nth-child(4) span:nth-child(1){
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: url(https://bd-s.tripcdn.cn/NFES/html5/1741677121456/_next/serverStatic/img/tabbar.png) no-repeat 0 -96px;
+    background-size: 32px auto;
+}
+.tabbar a span:nth-child(2){
+    display: block;
+    font-size: 11px;
+    color: #666;
+}
+.sub-banner{
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 0 12px;
+    margin: 0 0 10px -8px;
+}
+.sub-banner .banner{
+    flex: 1;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 8px;
+    background: #fff;
+    width: 50%;
+    height: 148px;
+    /* background-color: pink; */
+}
+.banner a{
+    display: flex;
+    justify-content: space-between;
+}
+.banner img{
+    height: 20px;
+}
+.banner .hotsale{
+    padding: 1px 4px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 10px;
+    color: #ff4607;
+    border-radius: 2px;
+    background: #ffebe3;
+}
+.banner .slider{
+    margin-top: 4px;
+    height: 106px;
+    /* background-color: pink; */
+}
+.slider .slider-img{
+    position: relative;
+    margin-bottom: 4px;
+    height: 84px;
+    border-radius: 6px;
+    overflow: hidden;
+    /* background-color: pink; */
+}
+.slider .slider-img .tag{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    background: rgba(51, 51, 51, .8);
+    color: #fff;
+}
+.slider .slider-img img{
+    position: absolute;
+    /* 照片缩小一半 */
+    top: 50%;
+    /* 照片在网上移动一半 */
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+.slider .slider-price{
+    height: 18px;
+    font-size: 16px;
+    color: #f60;
+    /* background-color: green; */
+}
+.slider .slider-price span{
+    color: #f60;
+}
+.banner .slogan-rank{
+    padding: 1px 4px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 10px;
+    background: #fdefd2;
+    border-radius: 2px;
+    color: #ae6e15;
+}
+.rank{
+    display: flex;
+    margin-top: 4px;
+    height: 103.19px;
+    /* background-color: pink; */
+}
+.rank a{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.rank a .rank-img{
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 84px;
+    border-radius: 6px;
+    background-color: green;
+}
+.rank a .rank-img div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    line-height: 17px;
+    font-size: 10px;
+    border-radius: 0 0 6px 0;
+    color: #663c00;
+    background: #e2c089;
+}
+.rank a .rank-img img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 84px;
+}
+.rank a .tag{
+    font-size: 11px;
+    color: #333;
+}
+.rank a:nth-child(1) .rank-img{
+    margin-right: 2px;
+}
+.rank a:nth-child(2) .rank-img{
+    margin-left: 2px;
+}
+.nav-switch-wrap{
+    position: relative;
+    padding: 4px 0 0;
+    height: 24px;
+    text-align: center;
+}
+.nav-switch-wrap span:nth-child(1){
+    position: absolute;
+    top: 4px;
+    left: 48%;
+    width: 14px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #0086f6;
+}
+.nav-switch-wrap span:nth-child(2){
+    position: absolute;
+    top: 4px;
+    left: 51.5%;
+    margin-right: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ccc;
+}
